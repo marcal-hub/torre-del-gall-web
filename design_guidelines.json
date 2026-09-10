@@ -1,0 +1,373 @@
+{
+  "theme": "light",
+  "archetype": "ARCHETYPE 1: ORGANIC & EARTHY (Mediterranean Architectural Luxury)",
+  "design_concept": "Contemporary Catalan Estate & Architectural Hospitality. A fusion of raw Mediterranean rural stone heritage, modernist Iberian editorial typography, and fluid cinematic scrollytelling. Avoids all rustic kitsch, script fonts, and wedding cliches in favor of high-craft architectural poise.",
+  "colors": {
+    "palette": {
+      "ivory_bg": "#F9F7F2",
+      "stone_sand": "#F0EDE4",
+      "warm_border": "#E4DDD0",
+      "deep_charcoal": "#1A1A18",
+      "charcoal_muted": "#575651",
+      "olive_botanical": "#444F3C",
+      "olive_soft": "#5D6A53",
+      "terracotta_subtle": "#8C5844",
+      "white": "#FFFFFF"
+    },
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F9F7F2",
+        "on_bg": "#1A1A18",
+        "on_bg_muted": "#575651",
+        "roles": {
+          "link": "#1A1A18",
+          "accent_label": "#444F3C",
+          "error": "#9E2A2B",
+          "success": "#2D6A4F"
+        }
+      },
+      {
+        "name": "stone_panel",
+        "kind": "solid",
+        "bg": "#F0EDE4",
+        "on_bg": "#1A1A18",
+        "on_bg_muted": "#575651",
+        "roles": {
+          "link": "#1A1A18",
+          "border": "#E4DDD0",
+          "accent": "#444F3C"
+        }
+      },
+      {
+        "name": "charcoal_dark",
+        "kind": "solid",
+        "bg": "#161614",
+        "on_bg": "#F9F7F2",
+        "on_bg_muted": "#B5B3A8",
+        "roles": {
+          "link": "#F9F7F2",
+          "accent_label": "#D9DFD0",
+          "border": "#2C2B27"
+        }
+      },
+      {
+        "name": "hero_video_surface",
+        "kind": "video",
+        "contrast_against": "#101010",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(16,16,16,0.55) 0%, rgba(16,16,16,0.3) 50%, rgba(16,16,16,0.75) 100%)",
+        "on_bg": "#FAF9F5",
+        "on_bg_muted": "#DDD9CD",
+        "roles": {
+          "link": "#FAF9F5",
+          "accent_badge": "#FAF9F5"
+        }
+      },
+      {
+        "name": "glass_nav",
+        "kind": "glass",
+        "contrast_against": "#EBE8DF",
+        "guarantee": "backdrop-blur-xl bg-[#F9F7F2]/85 border-b border-[#E4DDD0]/80 saturate-125",
+        "on_bg": "#1A1A18",
+        "on_bg_muted": "#575651",
+        "roles": {
+          "link": "#1A1A18",
+          "active_link": "#444F3C"
+        }
+      },
+      {
+        "name": "glass_hero_badge",
+        "kind": "glass",
+        "contrast_against": "#141414",
+        "guarantee": "backdrop-blur-md bg-white/10 border border-white/20 text-white",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E0DFDB"
+      }
+    ],
+    "accent": "#444F3C",
+    "on_accent": "#FFFFFF"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display Variable', Georgia, serif",
+      "body": "'DM Sans Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "mono": "'JetBrains Mono Variable', monospace"
+    },
+    "font_imports": [
+      "@import \"@fontsource-variable/playfair-display\";",
+      "@import \"@fontsource-variable/dm-sans\";",
+      "@import \"@fontsource-variable/jetbrains-mono\";"
+    ],
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headlines": "font-heading tracking-tight leading-[1.08] font-normal sm:font-medium",
+      "chapter_numbers": "font-mono text-xs uppercase tracking-[0.25em] text-[#444F3C]",
+      "subtitles": "font-body text-base sm:text-lg leading-relaxed text-[#575651]",
+      "body_text": "font-body text-base leading-relaxed text-[#1A1A18]",
+      "navigation": "font-body text-xs uppercase tracking-[0.18em] font-medium",
+      "buttons": "font-body text-xs uppercase tracking-[0.2em] font-semibold"
+    }
+  },
+  "entry_surfaces": {
+    "/": "cinematic full-bleed atmospheric video hero with masked line reveal text over dark tinted scrim and sticky crystal glass nav"
+  },
+  "layout_blueprints": {
+    "structure": "Single-page responsive layout with multi-language engine (CA default, ES, EN) and fast section anchor links.",
+    "sections": [
+      {
+        "id": "hero",
+        "name": "HERO",
+        "chapter": "00 / INTRO",
+        "layout": "Full viewport height (100vh / min-h-[700px]) relative container with ambient Mediterranean estate video loop, layered film grain, subtle gradient scrim, staggered line reveal typography, brand tagline, and floating discovery action.",
+        "headline_catalan": "Un espai per celebrar el que importa.",
+        "subline_catalan": "Bodas · Esdeveniments · Empreses",
+        "cta_catalan": "DESCOBREIX L'ESPAI",
+        "details": [
+          "Autoplay loop video with responsive fallback poster image and custom sound/play controls toggle.",
+          "Kinetic animated title reveal using framer-motion (motion/react).",
+          "Corner coordinates and location marker: '41°20'45\"N · Vilafranca del Penedès / Barcelona'.",
+          "Smooth scroll trigger to #espai."
+        ]
+      },
+      {
+        "id": "manifesto_marquee",
+        "name": "MANIFESTO & EDITORIAL MARQUEE",
+        "chapter": "MANIFEST",
+        "layout": "Low-contrast horizontal ribbon strip running slowly with key values separated by delicate asterisks or botanical leaf dots ('ARQUITECTURA MEDITERRÀNIA · PRIVACITAT ABSOLUTA · ALTA GASTRONOMIA · ESPAIS VERDS · LLUM NATURAL')."
+      },
+      {
+        "id": "espai",
+        "name": "01 ESPAI",
+        "chapter": "01 / ESPAI",
+        "title": "Una masia. Moltes possibilitats.",
+        "layout": "Asymmetrical editorial bento & photo-essay layout with varied frame proportions. 12-column grid with staggered vertical offsets and negative space.",
+        "subsections": [
+          {
+            "name": "Els Jardins & Oliveres",
+            "desc": "Més de 4.000 m² d'exteriors envoltats de vinyes, oliveres centenàries i camins empedrats."
+          },
+          {
+            "name": "La Masia Històrica",
+            "desc": "Edificació rural restaurada amb materials nobles, pedra natural i bigues de roure."
+          },
+          {
+            "name": "L'Hivernacle & Saló Principal",
+            "desc": "Grans finestrals d'acer i vidre banyats de llum mediterrània amb capacitat de fins a 250 convidats."
+          },
+          {
+            "name": "El Pati dels Cups",
+            "desc": "El cor íntim de la finca per a aperitius a la fresca i vetllades a la llum de les espelmes."
+          }
+        ]
+      },
+      {
+        "id": "esdeveniments",
+        "name": "02 ESDEVENIMENTS",
+        "chapter": "02 / ESDEVENIMENTS",
+        "title": "Tres mirades, una mateixa excel·lència.",
+        "layout": "Three equal vertical visual editorial columns/panels (BODES / ESDEVENIMENTS / EMPRESES) with rich photography, atmospheric hover transitions, expandable detail drawer/modal, and tailored capacity metrics.",
+        "categories": [
+          {
+            "slug": "bodes",
+            "title": "BODES",
+            "subtitle": "Casaments singulars i exclusius",
+            "metrics": "Fins a 250 persones · Cerimònia civil als jardins · Ball a l'aire lliure",
+            "image": "https://images.unsplash.com/photo-1740120424442-ccd013ec9581?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85"
+          },
+          {
+            "slug": "esdeveniments",
+            "title": "ESDEVENIMENTS PRIVATS",
+            "subtitle": "Aniversaris, trobades familiars i gales",
+            "metrics": "Flexibilitat total · Gastronomia d'autor · Intimitat absoluta",
+            "image": "https://images.unsplash.com/photo-1561593367-66c79c2294e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85"
+          },
+          {
+            "slug": "empreses",
+            "title": "EMPRESES & MICE",
+            "subtitle": "Convencions, team building i llançaments",
+            "metrics": "Connexió alta velocitat · Equip audiovisual · Zona chillout i networking",
+            "image": "https://images.unsplash.com/photo-1768508949921-9ef52e81bf1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85"
+          }
+        ]
+      },
+      {
+        "id": "galeria",
+        "name": "03 GALERIA",
+        "chapter": "03 / GALERIA",
+        "title": "Moments a La Torre del Gall",
+        "layout": "Sophisticated masonry & editorial mosaic with category filter tabs (Tots, Espais, Bodes, Gastronomia, Detalls), lightbox viewer on click, and refined editorial tags."
+      },
+      {
+        "id": "historia_experiencia",
+        "name": "LA MASIA & GASTRONOMIA",
+        "chapter": "FILOSOFIA",
+        "layout": "Two-column split editorial section highlighting the architectural heritage and the Mediterranean farm-to-table culinary philosophy."
+      },
+      {
+        "id": "contacte",
+        "name": "04 CONTACTE",
+        "chapter": "04 / CONTACTE",
+        "title": "Tens alguna cosa per celebrar?",
+        "layout": "Split architectural contact section: left column with warm hospitality info (Location, Phone, Email, Direct WhatsApp, Instagram, Interactive Leaflet / Google Maps link), right column with a responsive, multi-step booking/inquiry form connected to FastAPI backend (MongoDB persistence) with instant visual feedback and toast confirmation."
+      },
+      {
+        "id": "footer",
+        "name": "FOOTER",
+        "layout": "Deep charcoal monolithic footer with massive architectural wordmark 'LA TORRE DEL GALL', legal/privacy links, newsletter/brochure download CTA, and Catalan estate heritage notice."
+      }
+    ]
+  },
+  "media": {
+    "hero_video": "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-beautiful-residence-surrounded-by-trees-40439-large.mp4",
+    "hero_video_fallback": "https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+    "image_urls": [
+      {
+        "key": "masia_courtyard",
+        "category": "espai",
+        "url": "https://images.unsplash.com/photo-1767034240397-2a417b16b96a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHw0fHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Courtyard of rustic estate masia with centennial trees and stone arches"
+      },
+      {
+        "key": "masia_stone_facade",
+        "category": "espai",
+        "url": "https://images.unsplash.com/photo-1672264825942-3ba990ce1b4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Natural stone facade with blooming bougainvillea and Mediterranean door"
+      },
+      {
+        "key": "masia_gardens",
+        "category": "espai",
+        "url": "https://images.unsplash.com/photo-1788805298934-fb9c5a7f0101?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Lush estate gardens with umbrellas and stone terrace surrounded by cypress trees"
+      },
+      {
+        "key": "masia_tower_view",
+        "category": "espai",
+        "url": "https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Historic estate tower overlooking landscaped Mediterranean gardens"
+      },
+      {
+        "key": "wedding_banquet_long_table",
+        "category": "esdeveniments_bodes",
+        "url": "https://images.unsplash.com/photo-1740120424442-ccd013ec9581?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Candlelit outdoor long banquet table set under evening fairy lights"
+      },
+      {
+        "key": "wedding_gastronomy_table",
+        "category": "galeria",
+        "url": "https://images.unsplash.com/photo-1561593367-66c79c2294e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Fine dining Mediterranean tableware and floral arrangements"
+      },
+      {
+        "key": "private_event_pavilion",
+        "category": "esdeveniments_privats",
+        "url": "https://images.unsplash.com/photo-1707333514312-39cf7658479c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Outdoor glasshouse pavilion celebration with fairy lights and draped tables"
+      },
+      {
+        "key": "corporate_dinner_retreat",
+        "category": "esdeveniments_empreses",
+        "url": "https://images.unsplash.com/photo-1768508949921-9ef52e81bf1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Contemporary corporate banquet and gala setup in architectural hall"
+      },
+      {
+        "key": "corporate_rustic_lounge",
+        "category": "galeria",
+        "url": "https://images.unsplash.com/photo-1568641501334-48f634436fe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Outdoor relaxation and informal networking area under canvas awning"
+      },
+      {
+        "key": "gastronomy_pairing",
+        "category": "galeria",
+        "url": "https://images.unsplash.com/photo-1488324346298-5ad3d8f96d0d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Artisan tableware with fine wine glasses and culinary details"
+      }
+    ]
+  },
+  "motion": {
+    "smooth_scroll": "Smooth momentum scrolling enabled via lenis (or React Lenis wrapper).",
+    "framer_motion_specs": {
+      "stagger_children": 0.12,
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 36 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true, "margin": "-10%" },
+        "transition": { "duration": 0.85, "ease": [0.22, 1, 0.36, 1] }
+      },
+      "line_reveal": {
+        "initial": { "y": "110%", "opacity": 0 },
+        "animate": { "y": "0%", "opacity": 1 },
+        "transition": { "duration": 1.1, "ease": [0.16, 1, 0.3, 1] }
+      },
+      "image_hover_scale": {
+        "rest": { "scale": 1 },
+        "hover": { "scale": 1.045, "transition": { "duration": 0.7, "ease": [0.25, 1, 0.5, 1] } }
+      }
+    }
+  },
+  "accessibility": {
+    "wcag_level": "WCAG 2.1 AA compliant",
+    "contrast_check": "Every text color tested: Charcoal #1A1A18 on #F9F7F2 has 14.8:1 ratio; Muted #575651 has 6.2:1 ratio; Olive #444F3C has 7.1:1 ratio. White on dark hero has >10:1 ratio with guaranteed gradient scrim.",
+    "reduced_motion": "Include prefers-reduced-motion media query fallback disabling aggressive transforms.",
+    "keyboard_nav": "Full visible focus rings (ring-2 ring-[#444F3C] ring-offset-2), aria-expanded on dropdowns/modals, semantic heading hierarchy H1 -> H2 -> H3."
+  },
+  "internationalization": {
+    "default_lang": "ca",
+    "languages": ["ca", "es", "en"],
+    "labels": {
+      "nav": {
+        "espai": { "ca": "L'Espai", "es": "El Espacio", "en": "The Estate" },
+        "esdeveniments": { "ca": "Esdeveniments", "es": "Eventos", "en": "Events" },
+        "galeria": { "ca": "Galeria", "es": "Galería", "en": "Gallery" },
+        "contacte": { "ca": "Contacte", "es": "Contacto", "en": "Contact" },
+        "cta": { "ca": "Sol·licitar Informació", "es": "Solicitar Información", "en": "Request Info" }
+      },
+      "hero": {
+        "tagline": { "ca": "Un espai per celebrar el que importa.", "es": "Un espacio para celebrar lo que importa.", "en": "A place to celebrate what truly matters." },
+        "subline": { "ca": "Bodes · Esdeveniments · Empreses", "es": "Bodas · Eventos · Empresas", "en": "Weddings · Events · Corporate" },
+        "cta": { "ca": "Descobreix l'espai", "es": "Descubre el espacio", "en": "Explore the Estate" }
+      }
+    }
+  },
+  "backend_integration": {
+    "endpoint": "/api/inquiries",
+    "method": "POST",
+    "model_fields": ["name", "email", "phone", "event_type", "guest_count", "date_preference", "message"],
+    "database": "MongoDB via motor (`inquiries` collection)",
+    "feedback": "Instant client-side loading state, error alert on failure, and rich Sonner toast + in-form visual confirmation on success."
+  },
+  "testing_attributes": {
+    "nav_bar": "data-testid=\"main-navbar\"",
+    "lang_switcher": "data-testid=\"language-switcher\"",
+    "hero_cta": "data-testid=\"hero-cta-button\"",
+    "espai_section": "data-testid=\"section-espai\"",
+    "events_section": "data-testid=\"section-esdeveniments\"",
+    "gallery_section": "data-testid=\"section-galeria\"",
+    "contact_section": "data-testid=\"section-contacte\"",
+    "contact_form": "data-testid=\"contact-inquiry-form\"",
+    "form_name_input": "data-testid=\"inquiry-name-input\"",
+    "form_email_input": "data-testid=\"inquiry-email-input\"",
+    "form_phone_input": "data-testid=\"inquiry-phone-input\"",
+    "form_event_type": "data-testid=\"inquiry-event-type-select\"",
+    "form_guests_input": "data-testid=\"inquiry-guests-input\"",
+    "form_message_input": "data-testid=\"inquiry-message-input\"",
+    "form_submit_btn": "data-testid=\"inquiry-submit-button\"",
+    "form_success_alert": "data-testid=\"inquiry-success-message\""
+  },
+  "instructions_to_main_agent": [
+    "Follow this exact design system. Use Playfair Display for headings and DM Sans for body text.",
+    "Set the Tailwind v4 styles in /app/frontend/src/index.css with the warm ivory light theme and font tokens.",
+    "Implement the full-screen cinematic video hero with custom play/pause/mute toggle and fallback image.",
+    "Implement the Catalan default trilingual switcher (CA / ES / EN) using a clean context or state hook.",
+    "Implement the backend FastAPI inquiry model and router in /app/backend/routers/inquiries.py with MongoDB storage.",
+    "Add Lenis smooth scrolling (or smooth wheel momentum) and Framer Motion reveals for that Awwwards feel.",
+    "Ensure all data-testid attributes are preserved for automated test agents."
+  ]
+}

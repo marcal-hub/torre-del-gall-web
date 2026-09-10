@@ -1,0 +1,29 @@
+import { useEffect } from "react";
+import { initLenis } from "@/lib/scroll";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { Marquee } from "@/components/site/Marquee";
+import { Espai } from "@/components/site/Espai";
+import { Esdeveniments } from "@/components/site/Esdeveniments";
+import { Galeria } from "@/components/site/Galeria";
+import { Contacte } from "@/components/site/Contacte";
+import { Footer } from "@/components/site/Footer";
+
+export default function Home() {
+  useEffect(() => {
+    initLenis();
+  }, []);
+
+  return (
+    <main className="bg-ivory">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <Espai />
+      <Esdeveniments />
+      <Galeria />
+      <Contacte />
+      <Footer />
+    </main>
+  );
+}
