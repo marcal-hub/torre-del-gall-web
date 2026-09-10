@@ -1,8 +1,8 @@
 export const CONTACT = {
-  email: "info@latorredelgall.com",
-  phone: "+34 600 000 000",
-  phoneHref: "+34600000000",
-  instagram: "https://instagram.com/latorredelgall",
+  email: "anna@latorredelgall.com",
+  phone: "+34 938 992 003",
+  phoneHref: "+34938992003",
+  instagram: "https://www.instagram.com/latorredelgall/",
   maps: "https://www.google.com/maps/search/?api=1&query=La+Torre+del+Gall",
 };
 
