@@ -20,7 +20,7 @@ export function Footer() {
             alt="La Torre del Gall"
             className="mx-auto mb-10 h-12 w-auto invert lg:h-16"
           />
-          <p className="whitespace-nowrap text-center font-heading text-[10.5vw] leading-none tracking-tight text-ivory/90">
+          <p className="whitespace-nowrap text-center font-heading text-[clamp(1.75rem,8vw,8.75rem)] leading-none tracking-tight text-ivory/90">
             LA TORRE DEL GALL
           </p>
         </FadeUp>
