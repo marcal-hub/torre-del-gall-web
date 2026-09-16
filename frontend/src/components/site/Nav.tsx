@@ -41,11 +41,14 @@ export function Nav() {
           <button
             data-testid="nav-brand"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className={`font-heading text-sm tracking-[0.22em] transition-colors duration-500 lg:text-base ${
-              dark ? "text-ink" : "text-ivory"
-            }`}
+            aria-label="La Torre del Gall — inici"
+            className="flex items-center"
           >
-            LA TORRE DEL GALL
+            <img
+              src="/logo.png"
+              alt="La Torre del Gall"
+              className={`h-10 w-auto transition-[filter] duration-500 lg:h-12 ${dark ? "" : "invert"}`}
+            />
           </button>
 
           <nav className="hidden items-center gap-6 lg:flex" aria-label="Principal">
