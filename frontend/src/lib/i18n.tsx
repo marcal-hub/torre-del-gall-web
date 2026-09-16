@@ -32,7 +32,7 @@ const ca = {
     captions: ["El pati de la masia", "Pedra i buguenvíl·lea", "Racons amb caràcter", "L'entorn natural", "Detalls que expliquen", "Vistes de la finca"],
   },
   esdeveniments: {
-    chapter: "02 — Esdeveniments",
+    chapter: "Esdeveniments",
     title: "Molt més que casaments.",
     intro: "La Torre del Gall s'adapta a cada celebració: íntima o gran, familiar o corporativa.",
     discover: "Descobreix",
@@ -132,7 +132,7 @@ const es: Dict = {
     captions: ["El patio de la masía", "Piedra y buganvilla", "Rincones con carácter", "El entorno natural", "Detalles que cuentan", "Vistas de la finca"],
   },
   esdeveniments: {
-    chapter: "02 — Eventos",
+    chapter: "Eventos",
     title: "Mucho más que bodas.",
     intro: "La Torre del Gall se adapta a cada celebración: íntima o grande, familiar o corporativa.",
     discover: "Descubrir",
@@ -230,7 +230,7 @@ const en: Dict = {
     captions: ["The estate courtyard", "Stone and bougainvillea", "Corners with character", "The natural surroundings", "Details that tell stories", "Views over the grounds"],
   },
   esdeveniments: {
-    chapter: "02 — Events",
+    chapter: "Events",
     title: "Far more than weddings.",
     intro: "La Torre del Gall adapts to every celebration: intimate or grand, family or corporate.",
     discover: "Discover",
