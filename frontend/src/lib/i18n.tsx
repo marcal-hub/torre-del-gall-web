@@ -95,6 +95,19 @@ const ca = {
     successAgain: "Enviar una altra sol·licitud",
     error: "No s'ha pogut enviar. Torna-ho a provar o escriu-nos per correu.",
   },
+  quiSom: {
+    kicker: "La nostra història",
+    title: "Qui som",
+    alt: "La masia de La Torre del Gall",
+    paragraphs: [
+      "Tot va començar l’any 1969, amb una petita botiga de 40 metres quadrats a Vilafranca del Penedès.",
+      "En Josep Soler i la Rosa Cuscó, amb només 25 anys, van decidir emprendre aquella aventura.",
+      "Amb els anys, aquella botigueta va créixer i vam passar a una masia del segle XVII, on vam començar a fer plats cuinats, càtering i casaments.",
+      "El 2019 vam celebrar 50 anys d’història.",
+      "50 anys de canvis, de feina i, sobretot, de persones.",
+    ],
+    closing: "Perquè si alguna cosa no ha canviat és la nostra manera de fer: ser propers i fer-vos sentir com a casa.",
+  },
   footer: {
     tagline: "Masia per a bodes, esdeveniments i empreses · Catalunya",
     rights: "Tots els drets reservats.",
@@ -195,6 +208,19 @@ const es: Dict = {
     successAgain: "Enviar otra solicitud",
     error: "No se ha podido enviar. Inténtalo de nuevo o escríbenos por correo.",
   },
+  quiSom: {
+    kicker: "Nuestra historia",
+    title: "Quiénes somos",
+    alt: "La masía de La Torre del Gall",
+    paragraphs: [
+      "Todo empezó en 1969, con una pequeña tienda de 40 metros cuadrados en Vilafranca del Penedès.",
+      "Josep Soler y Rosa Cuscó, con solo 25 años, decidieron emprender aquella aventura.",
+      "Con los años, aquella tiendecita creció y pasamos a una masía del siglo XVII, donde empezamos a hacer platos cocinados, cátering y bodas.",
+      "En 2019 celebramos 50 años de historia.",
+      "50 años de cambios, de trabajo y, sobre todo, de personas.",
+    ],
+    closing: "Porque si algo no ha cambiado es nuestra manera de hacer: ser cercanos y haceros sentir como en casa.",
+  },
   footer: {
     tagline: "Masía para bodas, eventos y empresas · Cataluña",
     rights: "Todos los derechos reservados.",
@@ -292,6 +318,19 @@ const en: Dict = {
     successText: "Thank you for reaching out. We will get back to you as soon as possible.",
     successAgain: "Send another request",
     error: "Could not send. Please try again or email us directly.",
+  },
+  quiSom: {
+    kicker: "Our story",
+    title: "About us",
+    alt: "The La Torre del Gall farmhouse",
+    paragraphs: [
+      "It all began in 1969, with a small 40-square-metre shop in Vilafranca del Penedès.",
+      "Josep Soler and Rosa Cuscó, only 25 years old, decided to embark on that adventure.",
+      "Over the years, that little shop grew and we moved to a 17th-century farmhouse, where we began making cooked dishes, catering and weddings.",
+      "In 2019 we celebrated 50 years of history.",
+      "50 years of changes, of work and, above all, of people.",
+    ],
+    closing: "Because if anything has not changed, it is our way of doing things: staying close and making you feel at home.",
   },
   footer: {
     tagline: "A country estate for weddings, events and companies · Catalonia",
