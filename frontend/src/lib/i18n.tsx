@@ -25,7 +25,7 @@ const ca = {
   },
   marquee: ["Natura", "Arquitectura", "Celebracions", "Gastronomia", "Privacitat", "Llum mediterrània"],
   espai: {
-    chapter: "01 — L'espai",
+    chapter: "L'espai",
     title: "Una masia. Moltes possibilitats.",
     lead: "Un espai envoltat de natura pensat per celebrar, reunir-se i crear moments especials.",
     quote: "Pedra, llum i silenci.",
@@ -52,7 +52,7 @@ const ca = {
     captions: ["El brindis", "El plat", "La cuina", "La taula parada"],
   },
   galeria: {
-    chapter: "03 — Galeria",
+    chapter: "Galeria",
     title: "Moments a La Torre del Gall",
     filters: ["Tots", "Espais", "Bodes", "Gastronomia", "Celebracions"],
     items: [
@@ -68,7 +68,7 @@ const ca = {
     ],
   },
   contacte: {
-    chapter: "04 — Contacte",
+    chapter: "Contacte",
     title: "Tens alguna cosa per celebrar?",
     lead: "Explica'ns què tens en ment i descobrim junts com fer-ho possible a La Torre del Gall.",
     emailLabel: "Correu",
@@ -125,7 +125,7 @@ const es: Dict = {
   },
   marquee: ["Naturaleza", "Arquitectura", "Celebraciones", "Gastronomía", "Privacidad", "Luz mediterránea"],
   espai: {
-    chapter: "01 — El espacio",
+    chapter: "El espacio",
     title: "Una masía. Muchas posibilidades.",
     lead: "Un espacio rodeado de naturaleza pensado para celebrar, reunirse y crear momentos especiales.",
     quote: "Piedra, luz y silencio.",
@@ -152,7 +152,7 @@ const es: Dict = {
     captions: ["El brindis", "El plato", "La cocina", "La mesa puesta"],
   },
   galeria: {
-    chapter: "03 — Galería",
+    chapter: "Galería",
     title: "Momentos en La Torre del Gall",
     filters: ["Todos", "Espacios", "Bodas", "Gastronomía", "Celebraciones"],
     items: [
@@ -168,7 +168,7 @@ const es: Dict = {
     ],
   },
   contacte: {
-    chapter: "04 — Contacto",
+    chapter: "Contacto",
     title: "¿Tienes algo que celebrar?",
     lead: "Cuéntanos qué tienes en mente y descubrimos juntos cómo hacerlo posible en La Torre del Gall.",
     emailLabel: "Correo",
@@ -223,7 +223,7 @@ const en: Dict = {
   },
   marquee: ["Nature", "Architecture", "Celebrations", "Gastronomy", "Privacy", "Mediterranean light"],
   espai: {
-    chapter: "01 — The estate",
+    chapter: "The estate",
     title: "One estate. Endless possibilities.",
     lead: "A space surrounded by nature, made for celebrating, gathering and creating special moments.",
     quote: "Stone, light and silence.",
@@ -250,7 +250,7 @@ const en: Dict = {
     captions: ["The toast", "The dish", "The kitchen", "The table set"],
   },
   galeria: {
-    chapter: "03 — Gallery",
+    chapter: "Gallery",
     title: "Moments at La Torre del Gall",
     filters: ["All", "Spaces", "Weddings", "Gastronomy", "Celebrations"],
     items: [
@@ -266,7 +266,7 @@ const en: Dict = {
     ],
   },
   contacte: {
-    chapter: "04 — Contact",
+    chapter: "Contact",
     title: "Something to celebrate?",
     lead: "Tell us what you have in mind and let's discover together how to make it happen at La Torre del Gall.",
     emailLabel: "Email",
