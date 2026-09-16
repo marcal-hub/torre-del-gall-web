@@ -14,7 +14,9 @@ export function Nav() {
   const links = [
     { id: "espai", label: d.nav.espai },
     { id: "esdeveniments", label: d.nav.esdeveniments },
+    { id: "gastronomia", label: d.nav.gastronomia },
     { id: "galeria", label: d.nav.galeria },
+    { id: "qui-som", label: d.nav.quiSom },
     { id: "contacte", label: d.nav.contacte },
   ];
 
@@ -46,7 +48,7 @@ export function Nav() {
             LA TORRE DEL GALL
           </button>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
+          <nav className="hidden items-center gap-6 lg:flex" aria-label="Principal">
             {links.map((l) => (
               <button
                 key={l.id}

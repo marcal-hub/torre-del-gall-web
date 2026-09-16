@@ -5,6 +5,7 @@ import { Hero } from "@/components/site/Hero";
 import { Marquee } from "@/components/site/Marquee";
 import { Espai } from "@/components/site/Espai";
 import { Esdeveniments } from "@/components/site/Esdeveniments";
+import { Gastronomia } from "@/components/site/Gastronomia";
 import { Galeria } from "@/components/site/Galeria";
 import { QuiSom } from "@/components/site/QuiSom";
 import { Contacte } from "@/components/site/Contacte";
@@ -22,6 +23,7 @@ export default function Home() {
       <Marquee />
       <Espai />
       <Esdeveniments />
+      <Gastronomia />
       <Galeria />
       <QuiSom />
       <Contacte />

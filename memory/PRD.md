@@ -21,6 +21,7 @@ Rebuild from scratch the website of La Torre del Gall (latorredelgall.com), a ru
 - SEO: title, meta description, Open Graph tags, semantic headings, data-testids throughout.
 - Real contact details: anna@latorredelgall.com, +34 938 992 003, instagram.com/latorredelgall (2026-09-10).
 - QUI SOM section before Contacte (2026-09-16): exact Catalan family-story text, editorial two-column layout (image left, text right, stacked on mobile), emphasized closing sentence, subtle FadeUp reveals. Image placeholder in `IMG.quiSom` (site.ts) ready for a real family/masia photo.
+- GASTRONOMIA PRÒPIA section between Esdeveniments and Galeria (2026-09-16): kicker "Cuina pròpia", italic olive lead, 4-image editorial composition (toast large, plated dish, flour hands, pavilion small) from `IMG.gastro` (site.ts), "Vols conèixer els nostres menús?" + MÉS INFORMACIÓ CTA scrolling to Contacte. Nav updated to 6 items (Espai · Esdeveniments · Gastronomia · Galeria · Qui som · Contacte) on desktop and mobile menu, trilingual.
 
 ## Verified
 - POST /api/inquiries via public URL: 200 with id; invalid body → 422. yarn typecheck clean. Desktop + mobile screenshots of all sections; form submit → success panel confirmed in browser.

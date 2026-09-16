@@ -7,7 +7,9 @@ const ca = {
   nav: {
     espai: "Espai",
     esdeveniments: "Esdeveniments",
+    gastronomia: "Gastronomia",
     galeria: "Galeria",
+    quiSom: "Qui som",
     contacte: "Contacte",
     cta: "Sol·licitar informació",
     menu: "Menú",
@@ -39,6 +41,15 @@ const ca = {
       { num: "02", title: "Esdeveniments", desc: "Celebracions privades, trobades i moments especials." },
       { num: "03", title: "Empreses", desc: "Reunions, menjars d'empresa, presentacions i team building." },
     ],
+  },
+  gastronomia: {
+    kicker: "Cuina pròpia",
+    title: "Gastronomia pròpia",
+    lead: "La nostra cuina també forma part de l’experiència.",
+    support: "Oferim gastronomia pròpia per als vostres esdeveniments: menús pensats per acompanyar cada celebració, del primer brindis a l’últim plat.",
+    ctaQ: "Vols conèixer els nostres menús?",
+    cta: "Més informació",
+    captions: ["El brindis", "El plat", "La cuina", "La taula parada"],
   },
   galeria: {
     chapter: "03 — Galeria",
@@ -96,7 +107,9 @@ const es: Dict = {
   nav: {
     espai: "Espacio",
     esdeveniments: "Eventos",
+    gastronomia: "Gastronomía",
     galeria: "Galería",
+    quiSom: "Quiénes somos",
     contacte: "Contacto",
     cta: "Solicitar información",
     menu: "Menú",
@@ -128,6 +141,15 @@ const es: Dict = {
       { num: "02", title: "Eventos", desc: "Celebraciones privadas, encuentros y momentos especiales." },
       { num: "03", title: "Empresas", desc: "Reuniones, comidas de empresa, presentaciones y team building." },
     ],
+  },
+  gastronomia: {
+    kicker: "Cocina propia",
+    title: "Gastronomía propia",
+    lead: "Nuestra cocina también forma parte de la experiencia.",
+    support: "Ofrecemos gastronomía propia para vuestros eventos: menús pensados para acompañar cada celebración, del primer brindis al último plato.",
+    ctaQ: "¿Quieres conocer nuestros menús?",
+    cta: "Más información",
+    captions: ["El brindis", "El plato", "La cocina", "La mesa puesta"],
   },
   galeria: {
     chapter: "03 — Galería",
@@ -183,7 +205,9 @@ const en: Dict = {
   nav: {
     espai: "Estate",
     esdeveniments: "Events",
+    gastronomia: "Gastronomy",
     galeria: "Gallery",
+    quiSom: "About us",
     contacte: "Contact",
     cta: "Request information",
     menu: "Menu",
@@ -215,6 +239,15 @@ const en: Dict = {
       { num: "02", title: "Events", desc: "Private celebrations, gatherings and special moments." },
       { num: "03", title: "Corporate", desc: "Meetings, business lunches, presentations and team building." },
     ],
+  },
+  gastronomia: {
+    kicker: "Our own kitchen",
+    title: "Our own gastronomy",
+    lead: "Our kitchen is also part of the experience.",
+    support: "We offer our own gastronomy for your events: menus designed to accompany every celebration, from the first toast to the last dish.",
+    ctaQ: "Want to discover our menus?",
+    cta: "More information",
+    captions: ["The toast", "The dish", "The kitchen", "The table set"],
   },
   galeria: {
     chapter: "03 — Gallery",
