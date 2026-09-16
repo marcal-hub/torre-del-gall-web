@@ -15,6 +15,11 @@ export function Footer() {
           </div>
         </div>
         <FadeUp className="overflow-hidden py-14 lg:py-20">
+          <img
+            src="/logo.png"
+            alt="La Torre del Gall"
+            className="mx-auto mb-10 h-12 w-auto invert lg:h-16"
+          />
           <p className="whitespace-nowrap text-center font-heading text-[10.5vw] leading-none tracking-tight text-ivory/90">
             LA TORRE DEL GALL
           </p>
