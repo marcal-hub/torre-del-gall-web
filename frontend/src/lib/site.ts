@@ -18,6 +18,7 @@ export const IMG = {
   bodes: "https://images.unsplash.com/photo-1740120424442-ccd013ec9581?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   esdeveniments: "https://images.unsplash.com/photo-1621112904939-e259ddb99cff?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   empreses: "https://images.unsplash.com/photo-1748698534492-746f3950d9ca?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  quiSom: "https://images.unsplash.com/photo-1784807742825-9288201d26b0?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
   gallery: [
     "https://images.unsplash.com/photo-1767034239054-5bb3053e7ffa?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
     "https://images.unsplash.com/photo-1788628956197-d18489e6d874?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",

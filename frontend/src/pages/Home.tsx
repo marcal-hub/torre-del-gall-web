@@ -6,6 +6,7 @@ import { Marquee } from "@/components/site/Marquee";
 import { Espai } from "@/components/site/Espai";
 import { Esdeveniments } from "@/components/site/Esdeveniments";
 import { Galeria } from "@/components/site/Galeria";
+import { QuiSom } from "@/components/site/QuiSom";
 import { Contacte } from "@/components/site/Contacte";
 import { Footer } from "@/components/site/Footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Espai />
       <Esdeveniments />
       <Galeria />
+      <QuiSom />
       <Contacte />
       <Footer />
     </main>
