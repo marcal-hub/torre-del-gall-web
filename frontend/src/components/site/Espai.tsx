@@ -67,15 +67,6 @@ export function Espai() {
           className="absolute inset-0 h-[124%] w-full -translate-y-[12%] object-cover"
         />
       </div>
-
-      <div className="mx-auto mt-20 grid max-w-[1600px] grid-cols-12 gap-x-6 gap-y-12 px-5 lg:mt-32 lg:px-12">
-        <FadeUp className="col-span-12 sm:col-span-6 lg:col-span-5">
-          <Framed src={IMG.barrels} alt={d.espai.captions[4]} caption={d.espai.captions[4]} ratio="aspect-[4/5]" />
-        </FadeUp>
-        <FadeUp delay={0.12} className="col-span-12 sm:col-span-6 lg:col-span-5 lg:col-start-8 lg:mt-28">
-          <Framed src={IMG.tower} alt={d.espai.captions[5]} caption={d.espai.captions[5]} ratio="aspect-[4/5]" />
-        </FadeUp>
-      </div>
     </section>
   );
 }
