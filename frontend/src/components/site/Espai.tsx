@@ -27,7 +27,7 @@ export function Espai() {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="espai" data-testid="section-espai" className="bg-ivory py-24 lg:py-40">
+    <section id="espai" data-testid="section-espai" className="bg-ivory pt-24 lg:pt-40">
       <div className="mx-auto max-w-[1600px] px-5 lg:px-12">
         <div className="grid grid-cols-12 gap-x-6 gap-y-10">
           <FadeUp className="col-span-12 lg:col-span-7">

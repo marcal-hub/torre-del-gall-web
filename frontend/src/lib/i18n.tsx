@@ -7,6 +7,7 @@ const ca = {
   nav: {
     espai: "Espai",
     esdeveniments: "Esdeveniments",
+    experiencies: "Experiències",
     gastronomia: "Gastronomia",
     galeria: "Galeria",
     quiSom: "Qui som",
@@ -135,6 +136,7 @@ const es: Dict = {
   nav: {
     espai: "Espacio",
     esdeveniments: "Eventos",
+    experiencies: "Experiencias",
     gastronomia: "Gastronomía",
     galeria: "Galería",
     quiSom: "Quiénes somos",
@@ -261,6 +263,7 @@ const en: Dict = {
   nav: {
     espai: "Estate",
     esdeveniments: "Events",
+    experiencies: "Experiences",
     gastronomia: "Gastronomy",
     galeria: "Gallery",
     quiSom: "About us",

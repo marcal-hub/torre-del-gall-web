@@ -14,6 +14,7 @@ export function Nav() {
   const links = [
     { id: "espai", label: d.nav.espai },
     { id: "esdeveniments", label: d.nav.esdeveniments },
+    { id: "experiencies", label: d.nav.experiencies },
     { id: "gastronomia", label: d.nav.gastronomia },
     { id: "galeria", label: d.nav.galeria },
     { id: "qui-som", label: d.nav.quiSom },

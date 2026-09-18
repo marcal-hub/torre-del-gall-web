@@ -6,7 +6,7 @@ export const CONTACT = {
   maps: "https://www.google.com/maps/search/?api=1&query=La+Torre+del+Gall",
 };
 
-export const HERO_VIDEO = "https://assets.mixkit.co/videos/26550/26550-720.mp4";
+export const HERO_VIDEO = "/hero-video.mp4";
 
 export const IMG = {
   courtyard: "https://images.unsplash.com/photo-1767034240397-2a417b16b96a?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
