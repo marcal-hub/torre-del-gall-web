@@ -23,7 +23,7 @@ export function Hero() {
           muted
           loop
           playsInline
-          poster={IMG.courtyard}
+          poster="/hero-poster.jpg"
           src={HERO_VIDEO}
         />
       </motion.div>
