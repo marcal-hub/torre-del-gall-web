@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X } from "lucide-react";
 import { useLang } from "@/lib/i18n";
@@ -9,9 +9,17 @@ export function Galeria() {
   const { d } = useLang();
   const [filter, setFilter] = useState(1);
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const [minH, setMinH] = useState(0);
 
   const items = d.galeria.items.map((item, i) => ({ ...item, src: IMG.gallery[i] }));
   const visible = items.filter((it) => it.filter === filter).slice(0, 3);
+
+  const onFilter = (i: number) => {
+    if (i === filter) return;
+    if (gridRef.current) setMinH(gridRef.current.offsetHeight);
+    setFilter(i);
+  };
 
   return (
     <section id="galeria" data-testid="section-galeria" className="bg-ivory py-24 lg:py-36">
@@ -29,7 +37,7 @@ export function Galeria() {
                 <button
                   key={f}
                   data-testid={`gallery-filter-${i}`}
-                  onClick={() => setFilter(i)}
+                  onClick={() => onFilter(i)}
                   className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
                     filter === i ? "text-olive underline underline-offset-4" : "text-ink-muted hover:text-ink"
                   }`}
@@ -41,38 +49,45 @@ export function Galeria() {
           </FadeUp>
         </div>
 
-        <motion.div layout className="mt-14 columns-1 gap-5 sm:columns-2 lg:mt-20 lg:columns-3">
-          <AnimatePresence mode="popLayout">
-            {visible.map((item, i) => (
-              <motion.figure
-                layout
-                key={item.src}
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.04 }}
-                className="group mb-5 break-inside-avoid"
-              >
-                <button
-                  data-testid={`gallery-item-${i}`}
-                  onClick={() => setLightbox(i)}
-                  className="relative block w-full overflow-hidden"
+        <div ref={gridRef} style={minH ? { minHeight: minH } : undefined} className="mt-14 lg:mt-20">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={filter}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+              className="columns-1 gap-5 sm:columns-2 lg:columns-3"
+            >
+              {visible.map((item, i) => (
+                <motion.figure
+                  key={item.src}
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.08 + i * 0.08 }}
+                  className="group mb-5 break-inside-avoid"
                 >
-                  <img
-                    src={item.src}
-                    alt={item.label}
-                    loading="lazy"
-                    className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                  <figcaption className="absolute bottom-4 left-4 font-mono text-[10px] uppercase tracking-[0.25em] text-ivory opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    {item.label}
-                  </figcaption>
-                </button>
-              </motion.figure>
-            ))}
+                  <button
+                    data-testid={`gallery-item-${i}`}
+                    onClick={() => setLightbox(i)}
+                    className="relative block w-full overflow-hidden"
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.label}
+                      loading="lazy"
+                      className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <figcaption className="absolute bottom-4 left-4 font-mono text-[10px] uppercase tracking-[0.25em] text-ivory opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      {item.label}
+                    </figcaption>
+                  </button>
+                </motion.figure>
+              ))}
+            </motion.div>
           </AnimatePresence>
-        </motion.div>
+        </div>
       </div>
 
       <AnimatePresence>
