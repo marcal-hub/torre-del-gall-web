@@ -10,7 +10,7 @@ export const HERO_VIDEO = "/hero-video.mp4";
 
 export const IMG = {
   courtyard: "/photos/espai-sala.jpg",
-  facade: "https://images.unsplash.com/photo-1672264825942-3ba990ce1b4d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  facade: "/photos/espai-porta.jpg",
   patioPlants: "https://images.unsplash.com/photo-1767034241672-bd354b8a20a8?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   landscape: "https://images.unsplash.com/photo-1767022093696-edf729f460c9?crop=entropy&cs=srgb&fm=jpg&q=85&w=2000",
   barrels: "https://images.unsplash.com/photo-1767034238018-0567734f6c1d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
@@ -23,7 +23,7 @@ export const IMG = {
     "/photos/gastro-aperitius.jpg",
     "/photos/gastro-plat.jpg",
     "/photos/gastro-canelons.jpg",
-    "https://images.unsplash.com/photo-1707333514312-39cf7658479c?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
+    "/photos/gastro-taula.jpg",
   ],
   gallery: [
     "https://images.unsplash.com/photo-1767034239054-5bb3053e7ffa?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
