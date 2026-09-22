@@ -33,6 +33,6 @@ export const IMG = {
     "/photos/bodes-ball.jpg",
     "/photos/gastro-sopa.jpg",
     "/photos/celebracio-cantant.jpg",
-    "https://images.unsplash.com/photo-1767045567151-b9866b284ee1?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    "/photos/galeria-mirador-llums.jpg",
   ],
 };
