@@ -37,5 +37,6 @@ export const IMG = {
     "/photos/espai-bosquet.jpg",
     "/photos/celebracio-festa.jpg",
     "/photos/gastro-pastis.jpg",
+    "/photos/boda-vinya.jpg",
   ],
 };

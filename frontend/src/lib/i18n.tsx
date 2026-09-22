@@ -68,6 +68,7 @@ const ca = {
       { filter: 1, label: "Espais" },
       { filter: 4, label: "Celebració" },
       { filter: 3, label: "Gastronomia" },
+      { filter: 2, label: "Boda" },
     ],
   },
   contacte: {
@@ -199,6 +200,7 @@ const es: Dict = {
       { filter: 1, label: "Espacios" },
       { filter: 4, label: "Celebración" },
       { filter: 3, label: "Gastronomía" },
+      { filter: 2, label: "Boda" },
     ],
   },
   contacte: {
@@ -328,6 +330,7 @@ const en: Dict = {
       { filter: 1, label: "Spaces" },
       { filter: 4, label: "Celebration" },
       { filter: 3, label: "Gastronomy" },
+      { filter: 2, label: "Wedding" },
     ],
   },
   contacte: {
