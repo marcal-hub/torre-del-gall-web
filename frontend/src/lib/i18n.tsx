@@ -65,6 +65,7 @@ const ca = {
       { filter: 3, label: "Gastronomia" },
       { filter: 4, label: "Celebració" },
       { filter: 1, label: "Exterior" },
+      { filter: 1, label: "Espais" },
     ],
   },
   contacte: {
@@ -193,6 +194,7 @@ const es: Dict = {
       { filter: 3, label: "Gastronomía" },
       { filter: 4, label: "Celebración" },
       { filter: 1, label: "Exterior" },
+      { filter: 1, label: "Espacios" },
     ],
   },
   contacte: {
@@ -319,6 +321,7 @@ const en: Dict = {
       { filter: 3, label: "Gastronomy" },
       { filter: 4, label: "Celebration" },
       { filter: 1, label: "Exterior" },
+      { filter: 1, label: "Spaces" },
     ],
   },
   contacte: {

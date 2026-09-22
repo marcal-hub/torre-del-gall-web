@@ -34,5 +34,6 @@ export const IMG = {
     "/photos/gastro-sopa.jpg",
     "/photos/celebracio-cantant.jpg",
     "/photos/galeria-mirador-llums.jpg",
+    "/photos/espai-bosquet.jpg",
   ],
 };

@@ -35,6 +35,7 @@ Rebuild from scratch the website of La Torre del Gall (latorredelgall.com), a ru
 - 2026-09-22: Gallery filter transitions reworked per owner: replaced popLayout layout-animation with a whole-set crossfade (AnimatePresence mode="wait", 0.38s fade out, staggered 0.6s fade+rise in per image, expo-style ease), grid container holds previous height via measured minHeight so the page never jumps. Desktop + mobile verified.
 - 2026-09-22: Per owner (visual edit): masia gable photo (espai-fronto, R18) moved from gallery Espais filter → Espai section "Racons amb caràcter" slot (IMG.patioPlants), replacing the last stock photo in Espai. Gallery items array reduced to 8 (removed the "Espais" entry); Espais filter now shows 2 photos (sala + hills stock). Espai section is now 100% real photos.
 - 2026-09-22: Per owner (visual edit): paper-lantern banquet at the mirador ("mirador de les vinyes taula parada" → /photos/galeria-mirador-llums.jpg, R20) replaced the hills stock at gallery[8] (Espais filter, label "Exterior"). The entire gallery is now 100% real photos; Espais filter has 2 (sala + mirador).
+- 2026-09-22: Forest ceremony with benches and woven lamps ("cerimonia bosquet" → /photos/espai-bosquet.jpg, R21) added as 9th gallery item, Espais filter ("Espais"/"Espacios"/"Spaces" labels). Espais filter now complete with 3 real photos (sala, mirador, bosquet).
 
 ## Verified
 - POST /api/inquiries via public URL: 200 with id; invalid body → 422. yarn typecheck clean. Desktop + mobile screenshots of all sections; form submit → success panel confirmed in browser.
