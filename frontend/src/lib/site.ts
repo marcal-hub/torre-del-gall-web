@@ -30,7 +30,7 @@ export const IMG = {
     "/photos/gastro-cullerots.jpg",
     "/photos/galeria-taula-sol.jpg",
     "/photos/boda-oliveres.jpg",
-    "https://images.unsplash.com/photo-1767034240397-2a417b16b96a?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    "/photos/espai-fronto.jpg",
     "/photos/casament-moto.jpg",
     "/photos/gastro-sopa.jpg",
     "https://images.unsplash.com/photo-1761927710826-9447de4f83b9?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
