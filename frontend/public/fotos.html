@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Banc de fotos — La Torre del Gall (intern)</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; background: #F9F7F2; color: #1A1A18; margin: 0; padding: 32px 24px 64px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 48px 0 16px; border-bottom: 1px solid #E4DDD0; padding-bottom: 8px; }
+  p.sub { color: #575651; margin: 0 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  figure { margin: 0; background: #fff; border: 1px solid #E4DDD0; }
+  figure img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+  figcaption { padding: 8px 10px; font-size: 12px; display: flex; gap: 8px; align-items: baseline; }
+  .num { font-weight: 700; color: #444F3C; }
+  .use { color: #575651; font-size: 11px; }
+</style>
+</head>
+<body>
+<h1>Banc de fotos — La Torre del Gall</h1>
+<p class="sub">Pàgina interna per triar imatges. Digues-me el número de la foto i on la vols posar (p. ex. "la S12 al panell Esdeveniments").</p>
+
+<h2>Les vostres fotos (ara mateix a la web)</h2>
+<div class="grid">
+  <figure><img src="/photos/espai-sala.jpg" alt=""><figcaption><span class="num">R1</span><span class="use">Sala banquets · Galeria Espais</span></figcaption></figure>
+  <figure><img src="/photos/espai-porta.jpg" alt=""><figcaption><span class="num">R2</span><span class="use">Porta terracota · Espai</span></figcaption></figure>
+  <figure><img src="/photos/espai-entrada-cotxe.jpg" alt=""><figcaption><span class="num">R3</span><span class="use">Entrada amb Mini · Espai (ample total)</span></figcaption></figure>
+  <figure><img src="/photos/quisom-porta.jpg" alt=""><figcaption><span class="num">R4</span><span class="use">Porta amb rètol · Qui som</span></figcaption></figure>
+  <figure><img src="/photos/bodes-llum.jpg" alt=""><figcaption><span class="num">R5</span><span class="use">Taula amb espelmes · Esdeveniments → Bodes</span></figcaption></figure>
+  <figure><img src="/photos/empreses-bn.jpg" alt=""><figcaption><span class="num">R6</span><span class="use">Cuina d'empresa B/N · Esdeveniments → Empreses</span></figcaption></figure>
+  <figure><img src="/photos/gastro-aperitius.jpg" alt=""><figcaption><span class="num">R7</span><span class="use">Tartars · Gastronomia 1</span></figcaption></figure>
+  <figure><img src="/photos/gastro-plat.jpg" alt=""><figcaption><span class="num">R8</span><span class="use">Suquet · Gastronomia 2</span></figcaption></figure>
+  <figure><img src="/photos/gastro-canelons.jpg" alt=""><figcaption><span class="num">R9</span><span class="use">Canelons · Gastronomia 3</span></figcaption></figure>
+  <figure><img src="/photos/gastro-taula.jpg" alt=""><figcaption><span class="num">R10</span><span class="use">Taules mirador · Gastronomia 4</span></figcaption></figure>
+  <figure><img src="/photos/espai-vinyes.jpg" alt=""><figcaption><span class="num">R11</span><span class="use">Pèrgola vinyes · Espai (gran)</span></figcaption></figure>
+  <figure><img src="/photos/gastro-cullerots.jpg" alt=""><figcaption><span class="num">R12</span><span class="use">Cullerots · Galeria Gastronomia</span></figcaption></figure>
+  <figure><img src="/photos/boda-oliveres.jpg" alt=""><figcaption><span class="num">R13</span><span class="use">Parella oliveres · Galeria Bodes</span></figcaption></figure>
+  <figure><img src="/photos/gastro-sopa.jpg" alt=""><figcaption><span class="num">R14</span><span class="use">Sopa servida · Galeria Gastronomia</span></figcaption></figure>
+  <figure><img src="/photos/galeria-taula-sol.jpg" alt=""><figcaption><span class="num">R15</span><span class="use">Taula amb sol · Galeria Celebracions</span></figcaption></figure>
+  <figure><img src="/photos/casament-moto.jpg" alt=""><figcaption><span class="num">R16</span><span class="use">Moto vermella · Galeria Celebracions</span></figcaption></figure>
+</div>
+
+<h2>Fotos de stock disponibles (substitutes candidates)</h2>
+<p class="sub">Les marcades "EN ÚS" ja són a la web; la resta són candidates lliures.</p>
+<div class="grid" id="stock"></div>
+
+<script>
+const stock = [
+  ["https://images.unsplash.com/photo-1767034240397-2a417b16b96a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "EN ÚS · Galeria Espais"],
+  ["https://images.unsplash.com/photo-1767034241672-bd354b8a20a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "EN ÚS · Espai (pati testos)"],
+  ["https://images.unsplash.com/photo-1767034238018-0567734f6c1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "Pati amb botes"],
+  ["https://images.unsplash.com/photo-1767034239054-5bb3053e7ffa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "Pati de pedra"],
+  ["https://images.unsplash.com/photo-1767034240643-8b4795848db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "Pati amb escala"],
+  ["https://images.unsplash.com/photo-1767023630806-a44245a0f8cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw2fHxNZWRpdGVycmFuZWFuJTIwc3RvbmUlMjBmYXJtaG91c2UlMjB2aWxsYSUyMGNvdXJ0eWFyZHxlbnwwfHx8fDE3ODkwNDI2NDl8MA&ixlib=rb-4.1.0&q=85&w=640", "Arc terracota"],
+  ["https://images.unsplash.com/photo-1767022093696-edf729f460c9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "Turons i oliveres"],
+  ["https://images.unsplash.com/photo-1767022094253-a32c6e803e10?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "Oliveres al turó"],
+  ["https://images.unsplash.com/photo-1767045567151-b9866b284ee1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "EN ÚS · Galeria Exterior (turons)"],
+  ["https://images.unsplash.com/photo-1625860635811-6fb27e5e6d88?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "Camí entre turons"],
+  ["https://images.unsplash.com/photo-1764547500499-0dd7349d0209?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "Turons verds"],
+  ["https://images.unsplash.com/photo-1767022102496-6741d5e61e71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw2fHxvbGl2ZSUyMGdyb3ZlJTIwZ29sZGVuJTIwaG91ciUyMGNvdW50cnlzaWRlJTIwU3BhaW58ZW58MHx8fHwxNzg5MDQyNjU0fDA&ixlib=rb-4.1.0&q=85&w=640", "Camí d'oliveres"],
+  ["https://images.unsplash.com/photo-1589830517302-e6b46ba8f8f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBjZWxlYnJhdGlvbiUyMHBhcnR5JTIwc3RyaW5nJTIwbGlnaHRzJTIwZXZlbmluZ3xlbnwwfHx8fDE3ODkwNDI2Njh8MA&ixlib=rb-4.1.0&q=85&w=640", "Guirnaldes de llums"],
+  ["https://images.unsplash.com/photo-1589830468294-765e8aba10a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxnYXJkZW4lMjBjZWxlYnJhdGlvbiUyMHBhcnR5JTIwc3RyaW5nJTIwbGlnaHRzJTIwZXZlbmluZ3xlbnwwfHx8fDE3ODkwNDI2Njh8MA&ixlib=rb-4.1.0&q=85&w=640", "Carrer amb llums 1"],
+  ["https://images.unsplash.com/photo-1589830544862-0f2403e76b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjBjZWxlYnJhdGlvbiUyMHBhcnR5JTIwc3RyaW5nJTIwbGlnaHRzJTIwZXZlbmluZ3xlbnwwfHx8fDE3ODkwNDI2Njh8MA&ixlib=rb-4.1.0&q=85&w=640", "Carrer amb llums 2"],
+  ["https://images.unsplash.com/photo-1621112904939-e259ddb99cff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxnYXJkZW4lMjBjZWxlYnJhdGlvbiUyMHBhcnR5JTIwc3RyaW5nJTIwbGlnaHRzJTIwZXZlbmluZ3xlbnwwfHx8fDE3ODkwNDI2Njh8MA&ixlib=rb-4.1.0&q=85&w=640", "EN ÚS · Panell Esdeveniments (gronxador nit)"],
+  ["https://images.unsplash.com/photo-1673324492629-817c54f748ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxnYXJkZW4lMjBjZWxlYnJhdGlvbiUyMHBhcnR5JTIwc3RyaW5nJTIwbGlnaHRzJTIwZXZlbmluZ3xlbnwwfHx8fDE3ODkwNDI2Njh8MA&ixlib=rb-4.1.0&q=85&w=640", "Bokeh llums"],
+  ["https://images.pexels.com/photos/7591265/pexels-photo-7591265.jpeg?auto=compress&cs=tinysrgb&w=640", "Sopar sota guirnaldes"],
+  ["https://images.unsplash.com/photo-1761563732075-5b6ff033e694?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjByZXRyZWF0JTIwb3V0ZG9vciUyMG1lZXRpbmclMjBjb3VudHJ5c2lkZXxlbnwwfHx8fDE3ODkwNDI2Njl8MA&ixlib=rb-4.1.0&q=85&w=640", "Sopar chef's table"],
+  ["https://images.unsplash.com/photo-1758634198287-82f4bdb5034c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjByZXRyZWF0JTIwb3V0ZG9vciUyMG1lZXRpbmclMjBjb3VudHJ5c2lkZXxlbnwwfHx8fDE3ODkwNDI2Njl8MA&ixlib=rb-4.1.0&q=85&w=640", "Taula de reunió"],
+  ["https://images.unsplash.com/photo-1748698534492-746f3950d9ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjByZXRyZWF0JTIwb3V0ZG9vciUyMG1lZXRpbmclMjBjb3VudHJ5c2lkZXxlbnwwfHx8fDE3ODkwNDI2Njl8MA&ixlib=rb-4.1.0&q=85&w=640", "Team building corda"],
+  ["https://images.unsplash.com/photo-1761927710826-9447de4f83b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjByZXRyZWF0JTIwb3V0ZG9vciUyMG1lZXRpbmclMjBjb3VudHJ5c2lkZXxlbnwwfHx8fDE3ODkwNDI2Njl8MA&ixlib=rb-4.1.0&q=85&w=640", "EN ÚS · Galeria Corporatiu (pícnic)"],
+  ["https://images.unsplash.com/photo-1764059524003-a90e0e832dbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjByZXRyZWF0JTIwb3V0ZG9vciUyMG1lZXRpbmclMjBjb3VudHJ5c2lkZXxlbnwwfHx8fDE3ODkwNDI2Njl8MA&ixlib=rb-4.1.0&q=85&w=640", "Presentació amb portàtil"],
+  ["https://images.unsplash.com/photo-1625680620568-25596747ec8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula de boda clàssica"],
+  ["https://images.unsplash.com/photo-1771576903809-c67244216675?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula de boda blanca"],
+  ["https://images.unsplash.com/photo-1761170222413-37f03215ce1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula llarga ambient"],
+  ["https://images.unsplash.com/photo-1748698640275-90be91a7db1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula vestida de blanc"],
+  ["https://images.unsplash.com/photo-1712764995305-517d201fd6c9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula al jardí al capvespre"],
+  ["https://images.unsplash.com/photo-1708008219511-5b9e5f0e1e34?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw2fHxlbGVnYW50JTIwb3V0ZG9vciUyMHdlZGRpbmclMjByZWNlcHRpb24lMjB0YWJsZSUyMHNldHRpbmd8ZW58MHx8fHwxNzg5MDQyNzExfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula rústica amb pa"],
+  ["https://images.unsplash.com/photo-1784807742825-9288201d26b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Façana persianes blaves"],
+  ["https://images.unsplash.com/photo-1786479918594-1fe1074521e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Balcó amb buguenvíl·lea"],
+  ["https://images.unsplash.com/photo-1769182002795-6c446ab54d22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Paret amb ombra d'agave"],
+  ["https://images.unsplash.com/photo-1769174325559-a71e720b5109?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Casa de pedra i camí"],
+  ["https://images.unsplash.com/photo-1760420080748-a85a02a574c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Casa persianes verdes"],
+  ["https://images.unsplash.com/photo-1769182002541-f5d361ec92f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw2fHxydXN0aWMlMjBzdG9uZSUyMGhvdXNlJTIwZXh0ZXJpb3IlMjBtZWRpdGVycmFuZWFufGVufDB8fHx8MTc4OTA0MjcxN3ww&ixlib=rb-4.1.0&q=85&w=640", "Escala terracota amb testos"],
+  ["https://images.unsplash.com/photo-1788628956197-d18489e6d874?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxtZWRpdGVycmFuZWFuJTIwZGlubmVyJTIwdGFibGUlMjBmb29kJTIwc2hhcmluZyUyMG91dGRvb3J8ZW58MHx8fHwxNzg5MDQyNzIyfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula amb formatges i raïm"],
+  ["https://images.unsplash.com/photo-1681657687044-9bde75edb38e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxtZWRpdGVycmFuZWFuJTIwZGlubmVyJTIwdGFibGUlMjBmb29kJTIwc2hhcmluZyUyMG91dGRvb3J8ZW58MHx8fHwxNzg5MDQyNzIyfDA&ixlib=rb-4.1.0&q=85&w=640", "Grup sopant junts"],
+  ["https://images.unsplash.com/photo-1775204116608-d2fe3d0ee531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxtZWRpdGVycmFuZWFuJTIwZGlubmVyJTIwdGFibGUlMjBmb29kJTIwc2hhcmluZyUyMG91dGRvb3J8ZW58MHx8fHwxNzg5MDQyNzIyfDA&ixlib=rb-4.1.0&q=85&w=640", "Taula d'aperitius servida"],
+  ["https://images.pexels.com/photos/35990715/pexels-photo-35990715.jpeg?auto=compress&cs=tinysrgb&w=640", "Bol d'hummus i amanida"],
+  ["https://images.unsplash.com/photo-1748108252034-0dcfddfa0f74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxtZWRpdGVycmFuZWFuJTIwZGlubmVyJTIwdGFibGUlMjBmb29kJTIwc2hhcmluZyUyMG91dGRvb3J8ZW58MHx8fHwxNzg5MDQyNzIyfDA&ixlib=rb-4.1.0&q=85&w=640", "Servint un plat"],
+  ["https://images.unsplash.com/photo-1759882545761-67dc055a1841?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw2fHxtZWRpdGVycmFuZWFuJTIwZGlubmVyJTIwdGFibGUlMjBmb29kJTIwc2hhcmluZyUyMG91dGRvb3J8ZW58MHx8fHwxNzg5MDQyNzIyfDA&ixlib=rb-4.1.0&q=85&w=640", "Burrata i tomaca"],
+  ["https://images.unsplash.com/photo-1533239111758-e8b3584f6770?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHdhbGwlMjBhcmNoaXRlY3R1cmUlMjBkZXRhaWwlMjB0ZXh0dXJlJTIwc3VubGlnaHR8ZW58MHx8fHwxNzg5MDQyNzM1fDA&ixlib=rb-4.1.0&q=85&w=640", "Paret grisa amb ombra"],
+  ["https://images.unsplash.com/photo-1673157014075-0b913151a47a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMHdhbGwlMjBhcmNoaXRlY3R1cmUlMjBkZXRhaWwlMjB0ZXh0dXJlJTIwc3VubGlnaHR8ZW58MHx8fHwxNzg5MDQyNzM1fDA&ixlib=rb-4.1.0&q=85&w=640", "Banc de pedra"],
+  ["https://images.unsplash.com/photo-1770550199465-b5d6f74b2d12?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxzdG9uZSUyMHdhbGwlMjBhcmNoaXRlY3R1cmUlMjBkZXRhaWwlMjB0ZXh0dXJlJTIwc3VubGlnaHR8ZW58MHx8fHwxNzg5MDQyNzM1fDA&ixlib=rb-4.1.0&q=85&w=640", "Mur de pedra i cel"],
+  ["https://images.unsplash.com/photo-1568623413554-e7e0e8f2d4a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxzdG9uZSUyMHdhbGwlMjBhcmNoaXRlY3R1cmUlMjBkZXRhaWwlMjB0ZXh0dXJlJTIwc3VubGlnaHR8ZW58MHx8fHwxNzg5MDQyNzM1fDA&ixlib=rb-4.1.0&q=85&w=640", "Textura marbre"],
+  ["https://images.unsplash.com/photo-1776010048158-d6a54f561906?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxzdG9uZSUyMHdhbGwlMjBhcmNoaXRlY3R1cmUlMjBkZXRhaWwlMjB0ZXh0dXJlJTIwc3VubGlnaHR8ZW58MHx8fHwxNzg5MDQyNzM1fDA&ixlib=rb-4.1.0&q=85&w=640", "Pedra irregular"],
+  ["https://images.unsplash.com/photo-1669472546359-418a98630699?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxwbGF0ZWQlMjBtZWRpdGVycmFuZWFuJTIwZGlzaCUyMGdvdXJtZXQlMjBwbGF0aW5nfGVufDB8fHx8MTc4OTA0NTA2Nnww&ixlib=rb-4.1.0&q=85&w=640", "Plat emplafat fosc"],
+  ["https://images.unsplash.com/photo-1766020932144-3b7ebc0dcad2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxwbGF0ZWQlMjBtZWRpdGVycmFuZWFuJTIwZGlzaCUyMGdvdXJtZXQlMjBwbGF0aW5nfGVufDB8fHx8MTc4OTA0NTA2Nnww&ixlib=rb-4.1.0&q=85&w=640", "Plats de cuina d'autor"],
+  ["https://images.unsplash.com/photo-1669472546344-3aa411e55bbb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxwbGF0ZWQlMjBtZWRpdGVycmFuZWFuJTIwZGlzaCUyMGdvdXJtZXQlMjBwbGF0aW5nfGVufDB8fHx8MTc4OTA0NTA2Nnww&ixlib=rb-4.1.0&q=85&w=640", "Taula rústica amb embotit"],
+  ["https://images.unsplash.com/photo-1759882545681-d9143ec3c00c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxwbGF0ZWQlMjBtZWRpdGVycmFuZWFuJTIwZGlzaCUyMGdvdXJtZXQlMjBwbGF0aW5nfGVufDB8fHx8MTc4OTA0NTA2Nnww&ixlib=rb-4.1.0&q=85&w=640", "Plat de peix"],
+  ["https://images.unsplash.com/photo-1742197682412-43e3950d9ca9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxjaGVmJTIwaGFuZHMlMjBwcmVwYXJpbmclMjBmb29kJTIwa2l0Y2hlbiUyMHJ1c3RpY3xlbnwwfHx8fDE3ODkwNDUxMzB8MA&ixlib=rb-4.1.0&q=85&w=640", "Cuinant a cassola"],
+  ["https://images.unsplash.com/photo-1595801106239-faefa2cdcf75?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxjaGVmJTIwaGFuZHMlMjBwcmVwYXJpbmclMjBmb29kJTIwa2l0Y2hlbiUyMHJ1c3RpY3xlbnwwfHx8fDE3ODkwNDUxMzB8MA&ixlib=rb-4.1.0&q=85&w=640", "Mans amb farina"],
+  ["https://images.unsplash.com/photo-1761563877524-e1d0b3827267?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxjaGVmJTIwaGFuZHMlMjBwcmVwYXJpbmclMjBmb29kJTIwa2l0Y2hlbiUyMHJ1c3RpY3xlbnwwfHx8fDE3ODkwNDUxMzB8MA&ixlib=rb-4.1.0&q=85&w=640", "Mans de forner"],
+  ["https://images.unsplash.com/photo-1742197783225-95c0b63132c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxjaGVmJTIwaGFuZHMlMjBwcmVwYXJpbmclMjBmb29kJTIwa2l0Y2hlbiUyMHJ1c3RpY3xlbnwwfHx8fDE3ODkwNDUxMzB8MA&ixlib=rb-4.1.0&q=85&w=640", "Preparació a cuina"],
+  ["https://images.unsplash.com/photo-1723777912671-69707f608c3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxjaGVmJTIwaGFuZHMlMjBwcmVwYXJpbmclMjBmb29kJTIwa2l0Y2hlbiUyMHJ1c3RpY3xlbnwwfHx8fDE3ODkwNDUxMzB8MA&ixlib=rb-4.1.0&q=85&w=640", "Mans tallant"],
+  ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxmcmllbmRzJTIwdG9hc3RpbmclMjB3aW5lJTIwZ2xhc3NlcyUyMGRpbm5lciUyMHBhcnR5fGVufDB8fHx8MTc4OTA0NTEzNHww&ixlib=rb-4.1.0&q=85&w=640", "Brindis amb vi"],
+  ["https://images.unsplash.com/photo-1529518969858-8ba17cf10b27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxmcmllbmRzJTIwdG9hc3RpbmclMjB3aW5lJTIwZ2xhc3NlcyUyMGRpbm5lciUyMHBhcnR5fGVufDB8fHx8MTc4OTA0NTEzNHww&ixlib=rb-4.1.0&q=85&w=640", "Brindis de festa"],
+  ["https://images.unsplash.com/photo-1746029647375-6d8576c55de9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwzfHxmcmllbmRzJTIwdG9hc3RpbmclMjB3aW5lJTIwZ2xhc3NlcyUyMGRpbm5lciUyMHBhcnR5fGVufDB8fHx8MTc4OTA0NTEzNHww&ixlib=rb-4.1.0&q=85&w=640", "Copes de cava"],
+  ["https://images.unsplash.com/photo-1650624732428-f8881d293209?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw0fHxmcmllbmRzJTIwdG9hc3RpbmclMjB3aW5lJTIwZ2xhc3NlcyUyMGRpbm5lciUyMHBhcnR5fGVufDB8fHx8MTc4OTA0NTEzNHww&ixlib=rb-4.1.0&q=85&w=640", "Brindis a l'aire lliure"],
+  ["https://images.unsplash.com/photo-1560448227-a50c53b9b70a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHw1fHxmcmllbmRzJTIwdG9hc3RpbmclMjB3aW5lJTIwZ2xhc3NlcyUyMGRpbm5lciUyMHBhcnR5fGVufDB8fHx8MTc4OTA0NTEzNHww&ixlib=rb-4.1.0&q=85&w=640", "Amics brindant"],
+  ["https://images.unsplash.com/photo-1740120424442-ccd013ec9581?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85&w=640", "Banquet amb espelmes"],
+  ["https://images.unsplash.com/photo-1707333514312-39cf7658479c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NDQ2MzR8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwd2VkZGluZyUyMG91dGRvb3IlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5pbmd8ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85&w=640", "Pavelló amb làmpades"],
+  ["https://images.unsplash.com/photo-1768508949921-9ef52e81bf1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85&w=640", "Congrés modern"],
+  ["https://images.unsplash.com/photo-1672264825942-3ba990ce1b4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85&w=640", "Façana buguenvíl·lea"],
+  ["https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxtZWRpdGVycmFuZWFuJTIwcnVzdGljJTIwdmlsbGElMjBlc3RhdGUlMjBnYXJkZW58ZW58MHx8fHwxNzg5MDM5Mjc1fDA&ixlib=rb-4.1.0&q=85&w=640", "Torre i jardins"],
+  ["https://images.unsplash.com/photo-1568641501334-48f634436fe9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBjb25mZXJlbmNlJTIwcmV0cmVhdCUyMG1vZGVybiUyMGV2ZW50JTIwcnVzdGljfGVufDB8fHx8MTc4OTAzOTI3NXww&ixlib=rb-4.1.0&q=85&w=640", "Sala lounge corporativa"],
+];
+const grid = document.getElementById("stock");
+stock.forEach(([src, label], i) => {
+  const fig = document.createElement("figure");
+  fig.innerHTML = `<img src="${src}" alt="" loading="lazy"><figcaption><span class="num">S${i + 1}</span><span class="use">${label}</span></figcaption>`;
+  grid.appendChild(fig);
+});
+</script>
+</body>
+</html>

@@ -30,7 +30,7 @@ const ca = {
     title: "Una masia. Moltes possibilitats.",
     lead: "Una masia envoltada de natura a Catalunya, pensada per a casaments, esdeveniments privats i trobades d'empresa.",
     quote: "Casaments, esdeveniments i experiències en plena natura.",
-    captions: ["El pati de la masia", "Pedra i buguenvíl·lea", "Racons amb caràcter", "L'entorn natural", "Detalls que expliquen", "Vistes de la finca"],
+    captions: ["El jardí de la masia", "Pedra i buguenvíl·lea", "Racons amb caràcter", "L'entorn natural", "Detalls que expliquen", "Vistes de la finca"],
   },
   esdeveniments: {
     chapter: "Esdeveniments",
@@ -159,7 +159,7 @@ const es: Dict = {
     title: "Una masía. Muchas posibilidades.",
     lead: "Una masía rodeada de naturaleza en Cataluña, pensada para bodas, eventos privados y encuentros de empresa.",
     quote: "Bodas, eventos y experiencias en plena naturaleza.",
-    captions: ["El patio de la masía", "Piedra y buganvilla", "Rincones con carácter", "El entorno natural", "Detalles que cuentan", "Vistas de la finca"],
+    captions: ["El jardín de la masía", "Piedra y buganvilla", "Rincones con carácter", "El entorno natural", "Detalles que cuentan", "Vistas de la finca"],
   },
   esdeveniments: {
     chapter: "Eventos",
@@ -286,7 +286,7 @@ const en: Dict = {
     title: "One estate. Endless possibilities.",
     lead: "A farmhouse surrounded by nature in Catalonia, made for weddings, private events and corporate gatherings.",
     quote: "Weddings, events and experiences in the heart of nature.",
-    captions: ["The estate courtyard", "Stone and bougainvillea", "Corners with character", "The natural surroundings", "Details that tell stories", "Views over the grounds"],
+    captions: ["The estate gardens", "Stone and bougainvillea", "Corners with character", "The natural surroundings", "Details that tell stories", "Views over the grounds"],
   },
   esdeveniments: {
     chapter: "Events",

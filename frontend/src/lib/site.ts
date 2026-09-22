@@ -9,7 +9,7 @@ export const CONTACT = {
 export const HERO_VIDEO = "/hero-video.mp4";
 
 export const IMG = {
-  courtyard: "/photos/espai-sala.jpg",
+  courtyard: "/photos/espai-vinyes.jpg",
   facade: "/photos/espai-porta.jpg",
   patioPlants: "https://images.unsplash.com/photo-1767034241672-bd354b8a20a8?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   landscape: "/photos/espai-entrada-cotxe.jpg",
@@ -26,7 +26,7 @@ export const IMG = {
     "/photos/gastro-taula.jpg",
   ],
   gallery: [
-    "/photos/espai-vinyes.jpg",
+    "/photos/espai-sala.jpg",
     "/photos/gastro-cullerots.jpg",
     "/photos/galeria-taula-sol.jpg",
     "/photos/boda-oliveres.jpg",
