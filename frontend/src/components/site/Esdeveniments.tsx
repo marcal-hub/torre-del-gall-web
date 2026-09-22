@@ -5,6 +5,7 @@ import { IMG } from "@/lib/site";
 import { FadeUp, Chapter } from "./Reveal";
 
 const PANEL_IMAGES = [IMG.bodes, IMG.esdeveniments, IMG.empreses];
+const PANEL_FOCUS = ["object-[72%_center]", "", ""];
 const OFFSETS = ["lg:mt-0", "lg:mt-16", "lg:mt-32"];
 
 export function Esdeveniments() {
@@ -40,7 +41,7 @@ export function Esdeveniments() {
                     src={PANEL_IMAGES[i]}
                     alt={item.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                    className={`h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05] ${PANEL_FOCUS[i]}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-black/10 transition-opacity duration-500 group-hover:from-black/85" />
                   <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">

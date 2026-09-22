@@ -15,8 +15,8 @@ export const IMG = {
   landscape: "/photos/espai-entrada-cotxe.jpg",
   barrels: "https://images.unsplash.com/photo-1767034238018-0567734f6c1d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   tower: "https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
-  bodes: "/photos/bodes-llum.jpg",
-  esdeveniments: "https://images.unsplash.com/photo-1621112904939-e259ddb99cff?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  bodes: "/photos/bodes-ball.jpg",
+  esdeveniments: "/photos/bodes-llum.jpg",
   empreses: "/photos/empreses-bn.jpg",
   quiSom: "/photos/quisom-porta.jpg",
   gastro: [
