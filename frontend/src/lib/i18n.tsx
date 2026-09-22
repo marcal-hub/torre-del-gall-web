@@ -66,6 +66,7 @@ const ca = {
       { filter: 4, label: "Celebració" },
       { filter: 1, label: "Exterior" },
       { filter: 1, label: "Espais" },
+      { filter: 4, label: "Celebració" },
     ],
   },
   contacte: {
@@ -195,6 +196,7 @@ const es: Dict = {
       { filter: 4, label: "Celebración" },
       { filter: 1, label: "Exterior" },
       { filter: 1, label: "Espacios" },
+      { filter: 4, label: "Celebración" },
     ],
   },
   contacte: {
@@ -322,6 +324,7 @@ const en: Dict = {
       { filter: 4, label: "Celebration" },
       { filter: 1, label: "Exterior" },
       { filter: 1, label: "Spaces" },
+      { filter: 4, label: "Celebration" },
     ],
   },
   contacte: {

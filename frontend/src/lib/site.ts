@@ -35,5 +35,6 @@ export const IMG = {
     "/photos/celebracio-cantant.jpg",
     "/photos/galeria-mirador-llums.jpg",
     "/photos/espai-bosquet.jpg",
+    "/photos/celebracio-festa.jpg",
   ],
 };
