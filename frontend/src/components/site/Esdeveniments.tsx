@@ -5,7 +5,7 @@ import { IMG } from "@/lib/site";
 import { FadeUp, Chapter } from "./Reveal";
 
 const PANEL_IMAGES = [IMG.bodes, IMG.esdeveniments, IMG.empreses];
-const PANEL_FOCUS = ["object-[72%_center]", "", ""];
+const PANEL_FOCUS = ["", "", ""];
 const OFFSETS = ["lg:mt-0", "lg:mt-16", "lg:mt-32"];
 
 export function Esdeveniments() {
