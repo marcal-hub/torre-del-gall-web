@@ -1,5 +1,5 @@
 export const CONTACT = {
-  email: "anna@latorredelgall.com",
+  email: "info@calsoler.com",
   phone: "+34 938 992 003",
   phoneHref: "+34938992003",
   instagram: "https://www.instagram.com/latorredelgall/",

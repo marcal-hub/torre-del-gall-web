@@ -50,5 +50,6 @@ Rebuild from scratch the website of La Torre del Gall (latorredelgall.com), a ru
 
 ## Backlog
 - P0: Replace placeholder media with real La Torre del Gall photography + owner's hero video (edit `/app/frontend/src/lib/site.ts` only). Replace placeholder email/phone/Instagram with real contact details.
-- P1: Email notification on new inquiry (Resend managed integration). Admin view of inquiries.
+- P1: Admin view of inquiries.
+- DONE 2026-09-22: Email notification on new inquiry — Emergent managed Resend proxy (EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME="La Torre del Gall", EMAIL_REPLY_TO + OWNER_EMAIL = info@calsoler.com in backend/.env). server.py sends a branded HTML notification (all fields, mailto link to the visitor) to info@calsoler.com via fire-and-forget asyncio task after MongoDB insert; guardrail gate `_assert_safe_email` runs on every send. Verified end-to-end: curl inquiry + real browser form submission both logged "Inquiry email sent: <id>". Contact email on the site changed from anna@latorredelgall.com → info@calsoler.com (single source: CONTACT.email in site.ts; also footer).
 - P2: FAQ section, real Google Maps embed, cookie/analytics consent, OG image from real photography.
