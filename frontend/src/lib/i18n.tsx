@@ -50,7 +50,7 @@ const ca = {
     support: "Oferim gastronomia pròpia per als vostres esdeveniments: menús pensats per acompanyar cada celebració, del primer brindis a l’últim plat.",
     ctaQ: "Vols conèixer els nostres menús?",
     cta: "Més informació",
-    captions: ["El brindis", "El plat", "La cuina", "La taula parada"],
+    captions: ["Aperitius", "El plat", "La cuina", "La taula parada"],
   },
   galeria: {
     chapter: "Galeria",
@@ -179,7 +179,7 @@ const es: Dict = {
     support: "Ofrecemos gastronomía propia para vuestros eventos: menús pensados para acompañar cada celebración, del primer brindis al último plato.",
     ctaQ: "¿Quieres conocer nuestros menús?",
     cta: "Más información",
-    captions: ["El brindis", "El plato", "La cocina", "La mesa puesta"],
+    captions: ["Aperitivos", "El plato", "La cocina", "La mesa puesta"],
   },
   galeria: {
     chapter: "Galería",
@@ -306,7 +306,7 @@ const en: Dict = {
     support: "We offer our own gastronomy for your events: menus designed to accompany every celebration, from the first toast to the last dish.",
     ctaQ: "Want to discover our menus?",
     cta: "More information",
-    captions: ["The toast", "The dish", "The kitchen", "The table set"],
+    captions: ["Appetizers", "The dish", "The kitchen", "The table set"],
   },
   galeria: {
     chapter: "Gallery",

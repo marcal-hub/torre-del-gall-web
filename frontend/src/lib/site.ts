@@ -9,19 +9,19 @@ export const CONTACT = {
 export const HERO_VIDEO = "/hero-video.mp4";
 
 export const IMG = {
-  courtyard: "https://images.unsplash.com/photo-1767034240397-2a417b16b96a?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+  courtyard: "/photos/espai-sala.jpg",
   facade: "https://images.unsplash.com/photo-1672264825942-3ba990ce1b4d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   patioPlants: "https://images.unsplash.com/photo-1767034241672-bd354b8a20a8?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   landscape: "https://images.unsplash.com/photo-1767022093696-edf729f460c9?crop=entropy&cs=srgb&fm=jpg&q=85&w=2000",
   barrels: "https://images.unsplash.com/photo-1767034238018-0567734f6c1d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   tower: "https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
-  bodes: "https://images.unsplash.com/photo-1740120424442-ccd013ec9581?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  bodes: "/photos/bodes-llum.jpg",
   esdeveniments: "https://images.unsplash.com/photo-1621112904939-e259ddb99cff?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   empreses: "https://images.unsplash.com/photo-1748698534492-746f3950d9ca?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
-  quiSom: "https://images.unsplash.com/photo-1784807742825-9288201d26b0?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+  quiSom: "/photos/quisom-porta.jpg",
   gastro: [
-    "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
-    "https://images.unsplash.com/photo-1669472546359-418a98630699?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
+    "/photos/gastro-aperitius.jpg",
+    "/photos/gastro-plat.jpg",
     "https://images.unsplash.com/photo-1595801106239-faefa2cdcf75?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
     "https://images.unsplash.com/photo-1707333514312-39cf7658479c?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
   ],
