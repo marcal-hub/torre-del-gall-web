@@ -7,11 +7,11 @@ import { FadeUp, Chapter } from "./Reveal";
 
 export function Galeria() {
   const { d } = useLang();
-  const [filter, setFilter] = useState(0);
+  const [filter, setFilter] = useState(1);
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   const items = d.galeria.items.map((item, i) => ({ ...item, src: IMG.gallery[i] }));
-  const visible = items.filter((it) => filter === 0 || it.filter === filter);
+  const visible = items.filter((it) => it.filter === filter).slice(0, 3);
 
   return (
     <section id="galeria" data-testid="section-galeria" className="bg-ivory py-24 lg:py-36">
@@ -24,18 +24,20 @@ export function Galeria() {
             </h2>
           </FadeUp>
           <FadeUp delay={0.15} className="col-span-12 flex flex-wrap items-end gap-x-5 gap-y-2 lg:col-span-4">
-            {d.galeria.filters.map((f, i) => (
-              <button
-                key={f}
-                data-testid={`gallery-filter-${i}`}
-                onClick={() => setFilter(i)}
-                className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
-                  filter === i ? "text-olive underline underline-offset-4" : "text-ink-muted hover:text-ink"
-                }`}
-              >
-                {f}
-              </button>
-            ))}
+            {d.galeria.filters.map((f, i) =>
+              i === 0 ? null : (
+                <button
+                  key={f}
+                  data-testid={`gallery-filter-${i}`}
+                  onClick={() => setFilter(i)}
+                  className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+                    filter === i ? "text-olive underline underline-offset-4" : "text-ink-muted hover:text-ink"
+                  }`}
+                >
+                  {f}
+                </button>
+              )
+            )}
           </FadeUp>
         </div>
 
