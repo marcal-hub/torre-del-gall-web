@@ -11,7 +11,7 @@ export const HERO_VIDEO = "/hero-video.mp4";
 export const IMG = {
   courtyard: "/photos/espai-vinyes.jpg",
   facade: "/photos/espai-porta.jpg",
-  patioPlants: "https://images.unsplash.com/photo-1767034241672-bd354b8a20a8?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  patioPlants: "/photos/espai-fronto.jpg",
   landscape: "/photos/espai-entrada-cotxe.jpg",
   barrels: "https://images.unsplash.com/photo-1767034238018-0567734f6c1d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
   tower: "https://images.unsplash.com/photo-1721185444321-5900387e04bd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
@@ -30,7 +30,6 @@ export const IMG = {
     "/photos/gastro-cullerots.jpg",
     "/photos/galeria-taula-sol.jpg",
     "/photos/boda-oliveres.jpg",
-    "/photos/espai-fronto.jpg",
     "/photos/bodes-ball.jpg",
     "/photos/gastro-sopa.jpg",
     "/photos/celebracio-cantant.jpg",
