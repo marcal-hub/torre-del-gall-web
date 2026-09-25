@@ -194,7 +194,7 @@ async def root():
 @api_router.post("/inquiries", response_model=Inquiry)
 async def create_inquiry(input: InquiryCreate):
     inquiry = Inquiry(**input.model_dump())
-    await db.inquiries.insert_one(inquiry.model_dump())
+    # await db.inquiries.insert_one(inquiry.model_dump())
     # awaited (not background task): serverless runtimes can freeze after the
     # response, killing fire-and-forget tasks. _notify_inquiry never raises.
     await _notify_inquiry(inquiry)
